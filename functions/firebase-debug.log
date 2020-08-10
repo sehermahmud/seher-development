@@ -1,0 +1,53 @@
+[debug] [2020-08-10T13:09:51.517Z] ----------------------------------------------------------------------
+[debug] [2020-08-10T13:09:51.525Z] Command:       /usr/local/bin/firebase /Users/sehermahmud/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase functions:shell
+[debug] [2020-08-10T13:09:51.525Z] CLI Version:   8.4.3
+[debug] [2020-08-10T13:09:51.526Z] Platform:      darwin
+[debug] [2020-08-10T13:09:51.526Z] Node Version:  v12.16.1
+[debug] [2020-08-10T13:09:51.552Z] Time:          Mon Aug 10 2020 19:09:51 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-08-10T13:09:51.552Z] ----------------------------------------------------------------------
+[debug] [2020-08-10T13:09:51.552Z] 
+[debug] [2020-08-10T13:09:51.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-10T13:09:51.589Z] > authorizing via signed-in user
+[debug] [2020-08-10T13:09:51.589Z] [iam] checking project seher-development-5dfc5 for permissions ["firebase.projects.get"]
+[debug] [2020-08-10T13:09:51.599Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-08-10T13:09:51.600Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-08-10T13:09:52.174Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 10 Aug 2020 13:09:52 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-10T13:09:52.205Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/seher-development-5dfc5:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-08-10T13:09:53.502Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 10 Aug 2020 13:09:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=976","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"12\""}}
+[debug] [2020-08-10T13:09:53.581Z] [functions] Watching "/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions" for Cloud Functions...
+[debug] [2020-08-10T13:09:53.597Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-08-10T13:09:53.597Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-08-10T13:09:53.597Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-08-10T13:09:53.598Z] DEBUG: [worker-~diagnostic~-00afbc03-575f-4dd6-b554-2e13142cdc5b]: Assigning socketPath: /var/folders/mb/r9r2wylj56q2l773xbqjs1ym0000gn/T/fire_emu_35637.sock
+[debug] [2020-08-10T13:09:53.598Z] DEBUG: [worker-~diagnostic~-00afbc03-575f-4dd6-b554-2e13142cdc5b]: BUSY
+[debug] [2020-08-10T13:09:55.847Z] DEBUG: [runtime-status] [35637] Functions runtime initialized. {"cwd":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions","node_version":"12.16.1"}
+[debug] [2020-08-10T13:09:55.852Z] DEBUG: [runtime-status] [35637] Disabled runtime features: undefined
+[debug] [2020-08-10T13:09:55.872Z] DEBUG: [runtime-status] [35637] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-08-10T13:09:55.883Z] DEBUG: [runtime-status] [35637] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.9.0","resolution":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-08-10T13:09:55.889Z] DEBUG: [runtime-status] [35637] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-08-10T13:09:55.893Z] DEBUG: [runtime-status] [35637] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.9.0","resolution":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-08-10T13:09:56.340Z] DEBUG: [runtime-status] [35637] Checked functions.config() {"config":{}}
+[debug] [2020-08-10T13:09:56.342Z] DEBUG: [runtime-status] [35637] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.9.0","resolution":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-08-10T13:09:56.343Z] DEBUG: [runtime-status] [35637] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.9.0","resolution":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-08-10T13:09:56.345Z] DEBUG: [runtime-status] [35637] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-08-10T13:09:56.347Z] DEBUG: [runtime-status] [35637] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.9.0","resolution":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-08-10T13:09:56.349Z] DEBUG: [runtime-status] [35637] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-08-10T13:09:56.863Z] DEBUG: [runtime-status] [35637] initializeApp(DEFAULT) {"databaseURL":"https://seher-development-5dfc5.firebaseio.com","storageBucket":"seher-development-5dfc5.appspot.com","projectId":"seher-development-5dfc5"}
+[warn] ⚠  It looks like you're trying to access functions.config().user but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().user but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] ⚠  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/index.js:10:29)
+    at Module._compile (internal/modules/cjs/loader.js:1156:30)
+    at Module._compile (pkg/prelude/bootstrap.js:1281:32)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1176:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Module.require (internal/modules/cjs/loader.js:1042:19)
+    at Module.require (pkg/prelude/bootstrap.js:1225:31)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at /Users/sehermahmud/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:664:33 {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (/Users/sehermahmud/npm-global/udemy/d-Material-UI-React/seher-development/functions/index.js:10:29)\n    at Module._compile (internal/modules/cjs/loader.js:1156:30)\n    at Module._compile (pkg/prelude/bootstrap.js:1281:32)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1176:10)\n    at Module.load (internal/modules/cjs/loader.js:1000:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:899:14)\n    at Module.require (internal/modules/cjs/loader.js:1042:19)\n    at Module.require (pkg/prelude/bootstrap.js:1225:31)\n    at require (internal/modules/cjs/helpers.js:77:18)\n    at /Users/sehermahmud/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:664:33"}}
+[warn] ⚠  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-08-10T13:09:57.024Z] DEBUG: [worker-~diagnostic~-00afbc03-575f-4dd6-b554-2e13142cdc5b]: exited
+[debug] [2020-08-10T13:09:57.024Z] DEBUG: [worker-~diagnostic~-00afbc03-575f-4dd6-b554-2e13142cdc5b]: FINISHED
