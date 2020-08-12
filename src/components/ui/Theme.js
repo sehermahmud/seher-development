@@ -47,6 +47,12 @@ export default createMuiTheme({
       color: arcRedPink,
       fontWeight: 700,
     },
+    h6: {
+      fontWeight: 500,
+      fontFamily: "Raleway",
+      color: arcRedPink,
+      lineHeight: 1
+    },
     subtitle1: {
       fontSize: "1.2rem",
       fontWeight: 300,

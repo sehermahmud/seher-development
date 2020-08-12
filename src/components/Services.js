@@ -143,7 +143,7 @@ export default function Services(props) {
             </Typography>
             <Button
               component={Link}
-              to="/customsofware"
+              to="/customsoftware"
               variant="outlined"
               className={classes.learnButton}
               onClick={() => {

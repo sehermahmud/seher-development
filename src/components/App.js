@@ -52,7 +52,7 @@ function App() {
           />
           <Route
             exact
-            path="/customsofware"
+            path="/customsoftware"
             render={(props) => (
               <CustomSoftware
                 {...props}

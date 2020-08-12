@@ -70,7 +70,7 @@ export default function MobileApps(props) {
             <IconButton
               style={{ backgroundColor: "transparent" }}
               component={Link}
-              to="/customsofware"
+              to="/customsoftware"
               onClick={() => props.setSelectedIndex(1)}
             >
               <img

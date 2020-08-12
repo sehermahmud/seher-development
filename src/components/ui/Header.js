@@ -157,7 +157,7 @@ export default function Header(props) {
     { name: "Services", link: "/services", activeIndex: 1, selectedIndex: 0 },
     {
       name: "Custom Sofware Development",
-      link: "/customsofware",
+      link: "/customsoftware",
       activeIndex: 1,
       selectedIndex: 1,
     },
