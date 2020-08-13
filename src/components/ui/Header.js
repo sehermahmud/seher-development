@@ -25,11 +25,11 @@ function ElevationScroll(props) {
 
   const trigger = useScrollTrigger({
     disableHysteresis: true,
-    threshold: 0,
+    threshold: 0
   });
 
   return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
+    elevation: trigger ? 4 : 0
   });
 }
 
@@ -77,8 +77,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "25px",
     height: "45px",
     "&:hover": {
-      backgroundColor: theme.palette.primary.light
-    }
+      backgroundColor: theme.palette.primary.light,
+    },
   },
   menu: {
     backgroundColor: theme.palette.common.redPink,
@@ -87,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuItem: {
     ...theme.typography.tab,
+    color: "white",
     opacity: 0.7,
     "&:hover": {
       opacity: 1,
@@ -156,7 +157,7 @@ export default function Header(props) {
   const menuOptions = [
     { name: "Services", link: "/services", activeIndex: 1, selectedIndex: 0 },
     {
-      name: "Custom Sofware Development",
+      name: "Custom Software Development",
       link: "/customsoftware",
       activeIndex: 1,
       selectedIndex: 1,
@@ -183,15 +184,15 @@ export default function Header(props) {
       activeIndex: 1,
       ariaOwns: anchorEl ? "simple-menu" : undefined,
       ariaPopup: anchorEl ? "true" : undefined,
-      mouseOver: event => handleClick(event)
+      mouseOver: (event) => handleClick(event),
     },
     { name: "The Revolution", link: "/revolution", activeIndex: 2 },
     { name: "About Us", link: "/about", activeIndex: 3 },
-    { name: "Contact Us", link: "/contact", activeIndex: 4 }
+    { name: "Contact Us", link: "/contact", activeIndex: 4 },
   ];
 
   useEffect(() => {
-    [...menuOptions, ...routes].forEach(route => {
+    [...menuOptions, ...routes].forEach((route) => {
       switch (window.location.pathname) {
         case `${route.link}`:
           if (props.value !== route.activeIndex) {
@@ -251,7 +252,9 @@ export default function Header(props) {
         open={openMenu}
         onClose={handleClose}
         classes={{ paper: classes.menu }}
-        MenuListProps={{ onMouseLeave: handleClose }}
+        MenuListProps={{
+          onMouseLeave: handleClose,
+        }}
         elevation={0}
         style={{ zIndex: 1302 }}
         keepMounted

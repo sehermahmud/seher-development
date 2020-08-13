@@ -71,9 +71,9 @@ export default function About(props) {
         >
           Whether it be person to person, business to consumer, or an individual
           to their interests, technology is meant to bring us closer to what we
-          care about in the best way possible. Arc Development will use that
+          care about in the best way possible. Seher Development will use that
           principle to provide fast, modern, inexpensive, and aesthetic software
-          to the Midwest and beyond.
+          to the Bangladesh and beyond.
         </Typography>
       </Grid>
       <Grid

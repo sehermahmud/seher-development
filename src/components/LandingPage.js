@@ -150,7 +150,7 @@ export default function LandingPage(props) {
             <Typography variant="h2" align="center">
               Bringing West Coast Technology
               <br />
-              to the Midwest
+              to the Bangladesh
             </Typography>
             <Grid
               container
