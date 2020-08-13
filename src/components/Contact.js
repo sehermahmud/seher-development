@@ -142,6 +142,7 @@ export default function Contact(props) {
 
   const onConfirm = () => {
     setLoading(true);
+
     axios
       .get(
         "https://us-central1-seher-development-5dfc5.cloudfunctions.net/sendMail",
@@ -311,6 +312,7 @@ export default function Contact(props) {
                 value={message}
                 className={classes.message}
                 multiline
+                placeholder="Hello! Leave a message that you want to say to us"
                 fullWidth
                 rows={10}
                 id="message"
