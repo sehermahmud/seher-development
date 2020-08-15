@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Lottie from "react-lottie";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
@@ -19,6 +20,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
 import logo from "../../assets/seherlogo.png";
+import heartanimation from "../../animations/6925-heart-klarna.json";
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -133,6 +135,15 @@ export default function Header(props) {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [openMenu, setOpenMenu] = useState(false);
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: heartanimation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   const handleChange = (e, newValue) => {
     props.setValue(newValue);
@@ -353,6 +364,7 @@ export default function Header(props) {
               onClick={() => props.setValue(0)}
               className={classes.logoContainer}
             >
+              <Lottie options={defaultOptions} height="30%" width="30%" className={classes.logo} style={{padding: 0}}/>
               <img alt="Company logo" className={classes.logo} src={logo} />
             </Button>
             {matches ? drawer : tabs}

@@ -4,10 +4,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 
-import footerAdornment from "../../assets/Footer Adornment.svg";
+// import footerAdornment from "../../assets/Footer Adornment.svg";
 import facebook from "../../assets/facebook.svg";
 import twitter from "../../assets/twitter.svg";
 import instagram from "../../assets/instagram.svg";
+import footer from "../../img/IMG_0167.PNG";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -215,10 +216,9 @@ export default function Footer(props) {
           </Grid>
         </Grid>
       </Hidden>
-
       <img
         alt="black decorative slash"
-        src={footerAdornment}
+        src={footer}
         className={classes.adornment}
       />
 
