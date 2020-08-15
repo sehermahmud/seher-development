@@ -357,6 +357,7 @@ export default function Header(props) {
       <ElevationScroll>
         <AppBar position="fixed" color="secondary" className={classes.appbar}>
           <Toolbar disableGutters>
+          <Lottie options={defaultOptions} height="5em" width="6em" style={{ margin: 0}}/>
             <Button
               component={Link}
               to="/"
@@ -364,7 +365,6 @@ export default function Header(props) {
               onClick={() => props.setValue(0)}
               className={classes.logoContainer}
             >
-              <Lottie options={defaultOptions} height="30%" width="30%" className={classes.logo} style={{padding: 0}}/>
               <img alt="Company logo" className={classes.logo} src={logo} />
             </Button>
             {matches ? drawer : tabs}
